@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TECH-MANTHAN 3.0</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Black Ops One" rel="stylesheet" />
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/bg1.jpg');
+            background-position: center;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .logo {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        .event-logo {
+            height: 100px;
+            width: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .p {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-family: 'Black Ops One';
+        }
+
+        .image {
+            height: 50px;
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .event {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .instructions, .judging-criteria {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+
+        .instructions h3, .judging-criteria h3 {
+            color: #f5693c;
+            margin-bottom: 10px;
+            text-align: center; 
+        }
+
+        .instructions ol, .judging-criteria ol {
+            padding-left: 0;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .instructions ol li, .judging-criteria ol li {
+            margin-bottom: 10px;
+        }
+
+        .register-button {
+            margin-top: 20px;
+        }
+        h3{
+            font-family: 'Verdana';
+            font-weight:600;
+        }
+        .btn{
+            border-radius:10px;
+            background: rgb(171,18,50);
+            background: linear-gradient(90deg, rgba(171,18,50,1) 14%, rgba(138,8,173,1) 85%);
+            font-size:17px;
+            border:none;
+        }
+        .btn:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Changing box-shadow on hover */
+        }  
+        h1{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            color: transparent;
+            background-image: linear-gradient(to left, #9933FF, #fa0808);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }   
+        h4{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color:#b30059;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container text-center">
+    <div class="row">
+        <div class="col-sm-12">
+            <img
+                    src="{{ url_for('static', filename='logo.png') }}"
+                    alt="Event Logo"
+                    class="event-logo mx-auto d-block rounded-circle"
+            />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p style="color: white" class="p">TECH-MANTHAN 3.0</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <img
+                    src="{{ url_for('static', filename='bca.png') }}"
+                    alt="Rectangular Image"
+                    class="image mx-auto d-block rounded"
+            />
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <h1 class="text-center" >TECH AD MANIA</h1>
+        <h4 class="text-center">
+          -Ad Madness 
+        </h4>
+        <div class="row justify-content-center">
+            <div class="col-md-8 instructions">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>maximum number of participants in a team is 6.</li>
+                    <li>Time limit:6 minutes.</li>
+                    <li>No restriction on number of entries.</li>
+                    <li>The product should be related to technology.</li>
+                    <li>The presentation should contain brand name, tagline for the selected product.</li>
+                    <li>Participants are allow to use props or costumes to enhance their ads.</li>
+                    <li>No exposure to biasness against any caste/creed/community or religion is permitted.</li>
+                    <li>Judges can ask questions about the content or product.</li>
+                    <li>Judges decision will be considered as final.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="row justify-content-center">
+            <div class="col-md-8 judging-criteria">
+                <h3>Judging Criteria</h3>
+                <ol>
+                    <li>Content, creativity, originality.</li>
+                    <li>Humor.</li>
+                    <li>Teamwork.</li>
+                    <li>Clarity and message.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center register-button">
+        <a href="https://forms.gle/fgrNABVwQxACwzJt5" class="btn btn-primary btn-lg">Register Now</a>
+    </div>
+
+    <!--<p class="mt-5">Event Handler: <strong>Manjunath III BSC</strong></p>
+    <p>Contact: <strong>9945735489</strong></p>-->
+</div>
+</body>
+</html>
