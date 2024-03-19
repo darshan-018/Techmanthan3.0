@@ -66,5 +66,6 @@ def gamming():
 
 
 
-if __name__=='__main__':
-    app.run(debug=True)
+if __name__ == '__main__':
+    # Run the app with debug mode disabled and listen on all available IPs
+    app.run(debug=False, host='0.0.0.0')
